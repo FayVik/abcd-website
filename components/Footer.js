@@ -6,7 +6,7 @@ export default function Footer() {
          
             <Link href='/'>
               <a className="lg:inline-flex lg:w-auto md:px-5 text-center">
-                Footer Link 1
+                Team
               </a>
             </Link>
           
