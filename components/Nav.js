@@ -16,7 +16,7 @@ export default function Nav() {
       <Link href="/">
         <a className="inline-flex items-center p-2 mr-4">
           <span className="text-xl text-white font-bold uppercase tracking-wide">
-            Next JS + Tailwind CSS Template
+            ABCD Website
           </span>
         </a>
       </Link>
@@ -51,27 +51,27 @@ export default function Nav() {
       >
         <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
           <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-purple-300 hover:text-black">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-300 hover:text-black">
               Home
             </a>
           </Link>
           <Link href="/about">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-purple-300 hover:text-black">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-300 hover:text-black">
               About
             </a>
           </Link>
-          <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-purple-300 hover:text-black">
+          <Link href="/blog/BlogPage">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-300 hover:text-black">
               Blog
             </a>
           </Link>
           <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-purple-300 hover:text-black">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-300 hover:text-black">
               Nav Link
             </a>
           </Link>
           <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-purple-300 hover:text-black">
+            <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-300 hover:text-black">
               Nav Link
             </a>
           </Link>
