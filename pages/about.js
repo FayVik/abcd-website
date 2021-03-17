@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from '../styles/about.module.css'
 
+// Friday - let's get background images working. Buky will try this before Friday
+// https://tailwindcss.com/docs/background-image#customizing
 
 function about() {
     return (
@@ -14,10 +16,7 @@ function about() {
                     layout='fill' 
                     objectFit='cover' 
                     objectPosition='center'
-    
                 />    
-                
-
          </div>
 
          <div className={styles.text}>
