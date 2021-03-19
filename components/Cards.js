@@ -3,15 +3,18 @@
 
 export function BlogCard({ children }) {
   return (
-    <div className="flex-1 w-3/6 text-justify px-8 py-4 mx-4 mb-4 border shadow-lg w-full rounded-lg bg-gray-100">
-      <p>{children}</p>
+    <div className="flex-1 md:w-4/5 lg:w-4/5 sm:w-full text-justify px-8 py-4 mx-4 mb-10 border shadow-lg w-full rounded-lg bg-gray-100">
+      {children}
     </div>
   );
 }
 
 export function AnotherCard({ children }) {
   return (
-    <div className="flex-1 lg:w-3/6 lg:h-auto sm:py-28 pt-28 pb-14 text-justify px-4 mb-5 sm:w-full xs:w-full">
+    <div
+      className="flex-1 lg:w-3/6 lg:h-auto sm:py-28 pt-28 pb-14 text-justify px-4 mb-5 
+                sm:w-full xs:w-full bg-gradient-to-r from-gray-400 to-blue-500 md:bg-none lg:bg-none xl:bg-none"
+    >
       {children}
     </div>
   );
