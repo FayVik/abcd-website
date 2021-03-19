@@ -11,8 +11,13 @@ module.exports = {
         'serif': ['ui-serif', 'Georgia'],
         'mono': ['ui-monospace', 'SFMono-Regular'],
       },
-      extend: {}
-      },
+      extend: {
+        backgroundImage: theme => ({
+          'about-smile': "url('/smile.jpg')",
+          'worker': "url('/black.jpg')",
+         })
+      }
+    },
     variants: {},
     plugins: [
       require('@tailwindcss/forms'),
