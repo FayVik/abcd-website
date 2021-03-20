@@ -23,7 +23,18 @@ export function AnotherCard({ children }) {
 export function ImageCard({ children }) {
   return (
     <div
-      className="flex-1 lg:w-3/6 lg:h-auto sm:py-28 pt-28 pb-14 text-justify px-4 mb-5 
+      className="flex-1 lg:w-3/6 lg:h-auto text-center py-16 px-4 mb-5 
+                sm:w-full xs:w-full"
+    >
+      {children}
+    </div>
+  );
+}
+
+export function InfoCard({ children }) {
+  return (
+    <div
+      className="flex-1 lg:w-2/5 lg:h-auto sm:py-28 py-16 px-4 text-center mb-5 
                 sm:w-full xs:w-full"
     >
       {children}
