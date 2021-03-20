@@ -19,3 +19,14 @@ export function AnotherCard({ children }) {
     </div>
   );
 }
+
+export function ImageCard({ children }) {
+  return (
+    <div
+      className="flex-1 lg:w-3/6 lg:h-auto sm:py-28 pt-28 pb-14 text-justify px-4 mb-5 
+                sm:w-full xs:w-full"
+    >
+      {children}
+    </div>
+  );
+}

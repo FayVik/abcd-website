@@ -1,6 +1,8 @@
 import Head from "next/head";
 import style from "../styles/index.module.css";
-import { Heading1 } from "../components/Type";
+import Image from "next/image";
+import { BlogCard, ImageCard } from "../components/Cards";
+import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
 
 export default function Home() {
   return (
@@ -17,6 +19,31 @@ export default function Home() {
             <p>Welcome</p>
             <Heading1>AFRICA'S BLOCKCHAIN CENTER FOR DEVELOPERS</Heading1>
             <p>( ABCD )</p>
+          </div>
+        </div>
+        <div className="w-full min-h-screen">
+          <Heading2>More About ABCD</Heading2>
+          <div className="flex flex-col md:flex-wrap lg:flex-row items-center w-full min-h-96 py-20 px-4">
+            <BlogCard>
+              <Heading3>
+                CARDANO BLOCKCHAIN: A SOLUTION TO SOME OF AFRICA’S MAJOR PROBLEM
+              </Heading3>
+              <Paragraph>
+                What came to your mind when you first heard of blockchain
+                technology? Well for me, I was unenthusiastic about it, I
+                thought it would be lame(I had zero interest in technology at
+                that time)...
+              </Paragraph>
+            </BlogCard>
+
+            <ImageCard>
+              <Image
+                src="/rhero.jpg"
+                width="600"
+                height="500"
+                className="m-0 p-0 rounded-lg shadow-lg"
+              />
+            </ImageCard>
           </div>
         </div>
       </body>

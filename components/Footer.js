@@ -1,23 +1,37 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row w-full lg:p-6 bg-gray-700 text-white lg:z-40">
-      <Link href="/">
-        <a className="lg:inline-flex lg:w-auto md:px-5 text-center">Team</a>
-      </Link>
+      <div className="w-3/6">
+        <h4 class="mb-4">Port Harcourt Office Address</h4>
+        <p class="m-0 p-0">Woji Estate Road, YKC Junction, Port Harcourt</p>
+        <p>Tel: +234 816 643 5419</p>
+      </div>
+      <div className="w-3/6">
+        <p class="p-0 m-0">Email Us: hr@hxi.com.ng</p>
+        <p class="p-0 m-0">@Copyright 2020. All rights reserved by ABCD</p>
+      </div>
+      <div className="w-3/6">
+        <Link href="https://twitter.com/abcdeveloperz">
+          <a className="lg:inline-flex mr-6">
+            <FontAwesomeIcon className="w-9" icon={["fab", "twitter"]} />
+          </a>
+        </Link>
 
-      <Link href="/">
-        <a className="lg:inline-flex lg:w-auto md:px-5 text-center">
-          Footer Link 1
-        </a>
-      </Link>
+        <Link href="/">
+          <a className="lg:inline-flex mr-6">
+            <FontAwesomeIcon className="w-9" icon={["fab", "instagram"]} />
+          </a>
+        </Link>
 
-      <Link href="/">
-        <a className="lg:inline-flex lg:w-auto md:px-5 text-center">
-          Footer Link 3
-        </a>
-      </Link>
+        <Link href="/">
+          <a className="lg:inline-flex mr-6">
+            <FontAwesomeIcon className="w-9" icon={["fab", "medium-m"]} />
+          </a>
+        </Link>
+      </div>
     </footer>
   );
 }
