@@ -23,16 +23,14 @@ export default function Home() {
         </div>
         <div className="w-full min-h-screen">
           <Heading2>More About ABCD</Heading2>
-          <div className="flex flex-col md:flex-wrap lg:flex-row items-center w-full min-h-96 py-20 px-4">
+          <div className="flex flex-col md:flex-wrap lg:flex-row items-center w-full min-h-80">
             <BlogCard>
-              <Heading3>
-                CARDANO BLOCKCHAIN: A SOLUTION TO SOME OF AFRICA’S MAJOR PROBLEM
-              </Heading3>
+              <Heading3>Who We Are</Heading3>
               <Paragraph>
-                What came to your mind when you first heard of blockchain
-                technology? Well for me, I was unenthusiastic about it, I
-                thought it would be lame(I had zero interest in technology at
-                that time)...
+                AFRICA'S BLOCKCHAIN CENTER FOR DEVELOPERS ( ABCD ), is an online
+                Blockchain marketplace for startup that connect Blockchain
+                startup with investors and a Center for Blockchain Startups
+                Acceleration and Innovation Hub
               </Paragraph>
             </BlogCard>
 
