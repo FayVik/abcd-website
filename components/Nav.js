@@ -65,7 +65,7 @@ export default function Nav() {
               Blog
             </a>
           </Link>
-          <Link href="/">
+          <Link href="https://pooltool.io/pool/683e89fa1bcde139504b11fbfd914f8ebe9b8db2678b3da0abdcb2f1/epochs">
             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-300 hover:text-black">
               Delegate
             </a>

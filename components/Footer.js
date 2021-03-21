@@ -26,7 +26,7 @@ export default function Footer() {
           </a>
         </Link>
 
-        <Link href="/">
+        <Link href="https://medium.com/poapool">
           <a className="lg:inline-flex mr-6">
             <FontAwesomeIcon className="w-9" icon={["fab", "medium-m"]} />
           </a>
