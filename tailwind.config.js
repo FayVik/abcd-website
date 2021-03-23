@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "about-smile": "url('/smile.jpg')",
-        worker: "url('/black.jpg')",
+        strand: "url('/strand.jpg')",
         woman: "url('/abcd1.jpg')",
       }),
     },
