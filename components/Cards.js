@@ -41,3 +41,12 @@ export function InfoCard({ children }) {
     </div>
   );
 }
+
+
+export function AboutCard({ children }) {
+  return (
+    <div class="max-w-md mx-auto xl:mx-5 my-10 xl:my-0 bg-white rounded-xl shadow-md overflow-hidden">
+      {children}
+    </div>
+  )
+}
