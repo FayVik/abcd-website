@@ -9,8 +9,8 @@ function about() {
   return (
     <div>
       <div className="bg-about-smile bg-cover min-h-screen p-20">
-        <div className="bg-blue-400 mt-20 rounded-full bg-opacity-50 hover:bg-blue-500 p-20 float-left ml-0 w-1/2 h-96 pt-5 ">
-        <div className="p-1 bg-blue-700 w-full bg-opacity-50 mt-11 hover:bg-blue-100"></div>
+        <div className="bg-blue-700 mt-20 rounded-full bg-opacity-80 hover:bg-blue-500 p-20 float-left ml-0 w-1/2 h-96 pt-5 ">
+        <div className="p-1 bg-blue-300 w-full bg-opacity-80 mt-11 hover:bg-blue-100"></div>
           <section className="m-5 py-9 ">
           
             <span className="text-4xl text-white  font-bold">
@@ -21,10 +21,10 @@ function about() {
             </p>
             
           </section>
-          <div className="p-1 bg-blue-700 w-full bg-opacity-50 top-0 hover:bg-blue-100"></div>
+          <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
           <section className="mx-5 my-10 mt-5">
             <Link href="/">
-              <a className="bg-blue-700 hover:bg-blue-100 text-white hover:text-blue-700 p-3  rounded-lg">
+              <a className="bg-blue-300 hover:bg-blue-100 text-white hover:text-blue-700 p-3  rounded-lg">
                 Learn more
               </a>
             </Link>
@@ -38,7 +38,7 @@ function about() {
           <h1 className="text-5xl">WHAT WE DO</h1>
         </section>
 
-      <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800 padding-20 mt-20 rounded-3xl">
+      <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800  padding-20 mt-20 rounded-3xl">
         
         <div class="max-w-md mx-auto bg-white mb-20 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
@@ -71,7 +71,7 @@ function about() {
         <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
               <div class="md:flex-shrink-0">
-                  <img class="h-48 w-full object-cover md:w-48" src="/robot.jpg" alt="Man looking at item at a store"/>
+                  <img class="h-48 w-full object-cover md:w-48" src="/robot.jpg" alt="white background"/>
               </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Innovation</div>
@@ -84,15 +84,15 @@ function about() {
 
 
 
-      </div>==
+      </div>
 
       <section className="text-center p-20 ">
           <h1 className="text-5xl">OUR VISION</h1>
         </section>
       
       <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800  rounded-3xl flex flex-row  ">
-        <div className="w-3/6  " >
-        <img className="mt-32 ml-24 rounded-tl-lg rounded-tr-lg mb-10 bg-white m-0 auto " width="100%" height="100%" src="/robot.jpg" alt="Man looking at item at a store"/>
+        <div className="w-3/6" >
+        <img className="mt-32 ml-24 rounded-tl-lg rounded-tr-lg mb-10 bg-white m-0 auto " width="100%" height="100%" src="/robot.jpg" alt="white background"/>
         
         
 
@@ -155,6 +155,29 @@ ABCD will provide an environment that allows Africans to take an active role in 
         </p>
 
       </div>
+      <div className={styles.header}></div>
+
+
+
+      <section className="text-center p-20 ">
+          <h1 className="text-5xl">MEET OUR FOUNDER</h1>
+        </section>
+        <div className={styles.about}>
+          <h1>JOSHUA AKPAN</h1>
+          <h2>CARDANO EXPERT AND STRATEGIST</h2>
+          <div>
+            <Image src="/black.jpg" width="500" height="500"/>
+          </div>
+          <p>blah blah blah</p>
+          <Link href="/">
+              <a className="bg-blue-300 hover:bg-blue-100 text-white hover:text-blue-700 p-3  rounded-lg">
+                Learn more
+              </a>
+            </Link>
+        </div>
+
+
+
 
       
       

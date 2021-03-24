@@ -43,3 +43,7 @@
 
 
 }
+
+.about{
+    background: linear-gradient(-100deg, blue 50%, turquoise 50%);
+}
