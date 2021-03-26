@@ -1,19 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/about.module.css"
+import { AboutCard } from "../components/Cards"
 
 // Friday - let's get background images working. Buky will try this before Friday
 // https://tailwindcss.com/docs/background-image#customizing
 
+// w-full md:w-1/2 <-- this means that everything on a small screen "up to" size medium is w-full. at medium and above, it's w-1/2
+
+
 function about() {
   return (
     <div>
-      <div className="bg-about-smile bg-cover min-h-screen p-20">
-        <div className="bg-blue-700 mt-20 rounded-full bg-opacity-80 hover:bg-blue-500 p-20 float-left ml-0 w-1/2 h-96 pt-5 ">
+      <div className="bg-about-smile bg-cover min-h-screen pt-5 px-5 md:px-20">
+        <div className="w-full lg:w-1/2 rounded-lg md:rounded-3xl lg:rounded-full p-20 pt-5 ml-0 mt-20 bg-blue-500 bg-opacity-80 hover:bg-blue-500">
         <div className="p-1 bg-blue-300 w-full bg-opacity-80 mt-11 hover:bg-blue-100"></div>
           <section className="m-5 py-9 ">
           
-            <span className="text-4xl text-white  font-bold">
+            <span className="text-2xl xl:text-4xl text-purple-900 xl:text-white font-bold">
               Africa's Blockchain Center for Developers
             </span>
             <p className="text-lg text-white italic">
@@ -34,56 +38,43 @@ function about() {
         
       </div>
 
-      <section className="text-center p-20 ">
-          <h1 className="text-5xl">WHAT WE DO</h1>
+      <section className="text-center py-20">
+          <h1 className="text-5xl">WHAT WE DO </h1>
         </section>
 
-      <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800  padding-20 mt-20 rounded-3xl">
-        
-        <div class="max-w-md mx-auto bg-white mb-20 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="md:flex">
-              <div class="md:flex-shrink-0">
-                  <img class="h-48 w-full object-cover md:w-48" src="/table.jpg" alt="Man looking at item at a store"/>
-              </div>
+      <div className="flex flex-col xl:flex-row xl:py-20 justify-center bg-gradient-to-r from-blue-800 via-white to-blue-800">
+        <AboutCard>
+            <div class="">
+                <img class="h-48 w-full object-cover" src="/table.jpg" alt="Man looking at item at a store"/>
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Cardano Hub</div>
               <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">We at ABCD are committed to continuous and groundbreaking tech growth in Africa</a>
               <p class="mt-2 text-gray-500">Women are the core of technological and we are all for Women empowerment.</p>
             </div>
-          </div>
-        </div>
+        </AboutCard>
 
-
-        <div class="max-w-md mx-auto bg-white mb-20 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="md:flex">
-              <div class="md:flex-shrink-0">
-                  <img class="h-48 w-full object-cover md:w-48" src="/blue.jpg" alt="Man looking at item at a store"/>
-              </div>
+        <AboutCard>
+            <div class="">
+                <img class="h-48 w-full object-cover" src="/blue.jpg" alt="Man looking at item at a store"/>
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Build Applications for the Blockchaon</div>
               <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">We at ABCD are committed to continuous and groundbreaking tech growth in Africa</a>
               <p class="mt-2 text-gray-500">Women are the core of technological and we are all for Women empowerment.</p>
+            </div>  
+        </AboutCard>
+
+        <AboutCard>
+            <div class="">
+                <img class="h-48 w-full object-cover" src="/robot.jpg" alt="Man looking at item at a store"/>
             </div>
-          </div>
-        </div>
-
-
-        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="md:flex">
-              <div class="md:flex-shrink-0">
-                  <img class="h-48 w-full object-cover md:w-48" src="/robot.jpg" alt="white background"/>
-              </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Innovation</div>
               <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">We at ABCD are committed to continuous and groundbreaking tech growth in Africa</a>
               <p class="mt-2 text-gray-500">Women are the core of technological and we are all for Women empowerment.</p>
             </div>
-          </div>
-        </div>
-          
-
-
-
+        </AboutCard>
       </div>
 
       <section className="text-center p-20 ">
@@ -92,10 +83,8 @@ function about() {
       
       <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800  rounded-3xl flex flex-row  ">
         <div className="w-3/6" >
-        <img className="mt-32 ml-24 rounded-tl-lg rounded-tr-lg mb-10 bg-white m-0 auto " width="100%" height="100%" src="/robot.jpg" alt="white background"/>
+        <img className=" mt-32 ml-24 rounded-tl-lg rounded-tr-lg mb-10 bg-white m-0 auto " width="100%" height="100%" src="/robot.jpg" alt="white background"/>
         
-        
-
         </div>
         <div className=" w-3/6 ml-96 p-32">
           <p>Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams.
@@ -162,19 +151,18 @@ ABCD will provide an environment that allows Africans to take an active role in 
       <section className="text-center p-20 ">
           <h1 className="text-5xl">MEET OUR FOUNDER</h1>
         </section>
+        
         <div className={styles.about}>
           <h1>JOSHUA AKPAN</h1>
           <h2>CARDANO EXPERT AND STRATEGIST</h2>
-          <div>
-            <Image src="/black.jpg" width="500" height="500"/>
-          </div>
-          <p>blah blah blah</p>
-          <Link href="/">
-              <a className="bg-blue-300 hover:bg-blue-100 text-white hover:text-blue-700 p-3  rounded-lg">
-                Learn more
-              </a>
-            </Link>
+          <Image src="woman.jpg"/>
+          
+          
+          
         </div>
+
+        
+        
 
 
 
