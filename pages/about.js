@@ -77,29 +77,26 @@ function about() {
         </AboutCard>
       </div>
 
-      <section className="text-center p-20 ">
+      <section className="text-center p-20">
           <h1 className="text-5xl">OUR VISION</h1>
-        </section>
+      </section>
       
-      <div className="bg-gradient-to-r from-blue-800 via-white to-blue-800  rounded-3xl flex flex-row  ">
-        <div className="w-3/6" >
-        <img className=" mt-32 ml-24 rounded-tl-lg rounded-tr-lg mb-10 bg-white m-0 auto " width="100%" height="100%" src="/robot.jpg" alt="white background"/>
-        
+      <section className="flex flex-col lg:flex-row w-5/6 mx-auto bg-gradient-to-r from-blue-800 via-white to-blue-800 rounded-3xl">
+        <div className="w-full lg:w-3/6 px-5 pt-5 lg:pl-10 lg:py-10">
+          <Image src="/robot.jpg" width={1224} height={816} alt="white background"/>
         </div>
-        <div className=" w-3/6 ml-96 p-32">
-          <p>Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams.
-
-
-ABCD will create opportunities for Africans providing blockchain solutions to the world utilizing the pool of talent working from Africa.
-
-
-ABCD founders have been long involved in the development of initiatives related to the tech industry and blockchain in Nigeria and Africa.
-
-
-
-.</p>
+        <div className="w-full lg:w-3/6 px-5 py-5 lg:px-10 lg:py-10">
+          <p className="text-lg px-5 py-2">
+            Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams. 
+          </p>
+          <p className="text-lg px-5 py-2">
+            ABCD will create opportunities for Africans providing blockchain solutions to the world utilizing the pool of talent working from Africa.
+          </p>
+          <p className="text-lg px-5 py-2">
+             ABCD founders have been long involved in the development of initiatives related to the tech industry and blockchain in Nigeria and Africa.
+          </p>
         </div>
-      </div>
+      </section>
 
 
 
@@ -155,20 +152,8 @@ ABCD will provide an environment that allows Africans to take an active role in 
         <div className={styles.about}>
           <h1>JOSHUA AKPAN</h1>
           <h2>CARDANO EXPERT AND STRATEGIST</h2>
-          <Image src="woman.jpg"/>
-          
-          
-          
-        </div>
-
-        
-        
-
-
-
-
-      
-      
+          <Image src="/woman.jpg" width={690} height={460} />  
+        </div>      
     </div>
   );
 }
