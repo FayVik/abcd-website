@@ -45,6 +45,14 @@
 }
 
 .about{
-    background: linear-gradient(-50deg, blue 50%, white 50%);
+    background: linear-gradient(-50deg, blue 50%, white 60%);
     box-shadow:10px 10px 8px blue;
+}
+
+.image{
+    border-radius: 80%;
+}
+
+.right{
+    float: right;
 }

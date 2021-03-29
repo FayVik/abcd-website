@@ -146,14 +146,32 @@ ABCD will provide an environment that allows Africans to take an active role in 
 
 
       <section className="text-center p-20 ">
-          <h1 className="text-5xl">MEET OUR FOUNDER</h1>
+          <h1 className="text-5xl">MEET OUR FOUNDERS</h1>
         </section>
         
         <div className={styles.about}>
-          <h1>JOSHUA AKPAN</h1>
-          <h2>CARDANO EXPERT AND STRATEGIST</h2>
-          <Image src="/woman.jpg" width={690} height={460} />  
-        </div>      
+          <div>
+            <Image src="/josh2.jpg" width={290} height={260} className="rounded-full"/> 
+            <h1 className="text-3xl text-blue-800">JOSHUA AKPAN</h1>
+            <p>Founder, ABCD</p>
+          
+          </div>
+        </div>  
+
+        <div className={styles.about}>
+          <div>
+            <Image src="/gwendal.jpg" width={290} height={260} className="rounded-full"/> 
+            <h1 className="text-3xl text-blue-800">GWENDAL LE DIVECHEN</h1>
+            <p>Co- Founder & Comms , ABCD</p>
+          </div>
+        </div>  
+
+
+        <section className="text-center p-20 ">
+          <h1 className="text-5xl">MEET OUR DEVELOPERS</h1>
+        </section>
+
+
     </div>
   );
 }
