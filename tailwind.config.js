@@ -7,15 +7,16 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      sans: ["ui-sans-serif", "system-ui"],
+      sans: ["Open Sans Condensed", "ui-sans-serif", "system-ui"],
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
+      abcdheading: ["Syne Mono", "Georgia"],
     },
     extend: {
       backgroundImage: (theme) => ({
         "about-smile": "url('/smile.jpg')",
-        strand: "url('/strand.jpg')",
-        woman: "url('/abcd1.jpg')",
+        "strand": "url('/strand.jpg')",
+        "woman": "url('/abcd1.jpg')",
       }),
     },
   },
