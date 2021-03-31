@@ -105,8 +105,8 @@ function about() {
           <h1 className="text-5xl">OUR MISSION STATEMENT</h1>
         </section>
       <div className={styles.header}></div>
-      <div className="p-20 jistify-center border-blue-800">
-        <p>
+      <div className="p-20 justify-center border-blue-800">
+        <p className="text-lg">
         Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams.
 
 
@@ -114,17 +114,17 @@ ABCD will create opportunities for Africans providing blockchain solutions to th
 
 
 ABCD founders have been long involved in the development of initiatives related to the tech industry and blockchain in Nigeria and Africa.
+</p>
 
-
-
+<p className="text-lg">
 To do so, we have reviewed some of our initial objectives, perhaps too ambitious, in order to arrive at a roadmap that is still ambitious but realistically achievable.
 
 You will find below, a short description of the project. More detailed information is available in the attached documents.
 
 ---
 
-The mission of the African Blockchain Center for Developers is to stimulate, thanks to Cardano adoption, the establishment and growth of technology-based start-up companies and other blockchain-enabled businesses.
-
+The mission of the African Blockchain Center for Developers is to stimulate, thanks to Cardano adoption, the establishment and growth of technology-based start-up companies and other blockchain-enabled businesses.</p>
+<p className="text-lg">
 By fulfilling this mission, ABCD will concretely contribute to:
 - Local job creation
 - Local business development
@@ -152,7 +152,7 @@ ABCD will provide an environment that allows Africans to take an active role in 
         <div className={styles.about}>
           <div>
             <Image src="/josh2.jpg" width={290} height={260} className="rounded-full"/> 
-            <h1 className="text-3xl text-blue-800">JOSHUA AKPAN</h1>
+            <h1 className="text-3xl text-black lg:text-blue-800">JOSHUA AKPAN</h1>
             <p>Founder, ABCD</p>
           
           </div>
@@ -161,15 +161,28 @@ ABCD will provide an environment that allows Africans to take an active role in 
         <div className={styles.about}>
           <div>
             <Image src="/gwendal.jpg" width={290} height={260} className="rounded-full"/> 
-            <h1 className="text-3xl text-blue-800">GWENDAL LE DIVECHEN</h1>
+            <h1 className="text-3xl text-black lg:text-blue-800">GWENDAL LE DIVECHEN</h1>
             <p>Co- Founder & Comms , ABCD</p>
           </div>
         </div>  
 
 
         <section className="text-center p-20 ">
-          <h1 className="text-5xl">MEET OUR DEVELOPERS</h1>
+          <h1 className="text-5xl">ABCD COHORT 1</h1>
+
+
         </section>
+
+        <div className={styles.container}>
+        <div className={styles.outer}>
+        <div className={styles.details}>
+          <h1>ABCD COHORT 1</h1>
+          <h2>Creating female tech leads in Africa</h2>
+          
+        </div>
+        </div>
+
+        </div>
 
 
     </div>
