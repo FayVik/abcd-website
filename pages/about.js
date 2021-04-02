@@ -14,10 +14,10 @@ import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
 function about() {
   return (
     <div>
-      <div className="bg-about-smile bg-cover min-h-screen pt-5 px-5 md:px-20">
-        <div className="w-full lg:w-1/2 rounded-lg md:rounded-3xl lg:rounded-full p-20 pt-5 ml-0 mt-20 bg-blue-500 bg-opacity-80 hover:bg-blue-500">
-        <div className="p-1 bg-blue-300 w-full bg-opacity-80 mt-11 hover:bg-blue-100"></div>
-          <section className="m-5 py-9">
+      <div className="bg-about-smile bg-cover min-h-screen pt-2 px-2 md:px-20">
+        <div className="w-full lg:w-1/2 rounded-lg md:rounded-3xl lg:rounded-full p-2 md:p-20 mt-20 bg-blue-500 bg-opacity-80 hover:bg-blue-500">
+        <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
+          <section className="my-2 md:m-5 md:py-9">
             <Heading2>
               Africa's Blockchain Center for Developers
             </Heading2>
@@ -26,15 +26,15 @@ function about() {
             </Paragraph>
           </section>
           <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
-            <section className="mx-5 my-10 mt-5">
-              <Link href="/">
-                <Paragraph>
-                  <a className="">
-                    Learn more
-                  </a>
-                </Paragraph>
-              </Link>
-            </section>
+          <section className="my-2 md:mx-5 md:my-5">
+            <Link href="/">
+              <Paragraph>
+                <a className="">
+                  Learn more
+                </a>
+              </Paragraph>
+            </Link>
+          </section>
         </div> 
       </div>
 
@@ -61,7 +61,7 @@ function about() {
                 <img class="h-48 w-full object-cover" src="/blue.jpg" alt="Man looking at item at a store"/>
             </div>
             <div class="p-8">
-              <Heading3>Build Applications for the Blockchaon</Heading3>
+              <Heading3>Build Applications for the Blockchain</Heading3>
               <Paragraph>
                 <a href="#" class="">We at ABCD are committed to continuous and groundbreaking tech growth in Africa</a>
                 Women are the core of technological and we are all for Women empowerment.
@@ -91,7 +91,7 @@ function about() {
         <div className="w-full lg:w-3/6 px-5 pt-5 lg:pl-10 lg:py-10">
           <Image src="/robot.jpg" width={1224} height={816} alt="white background"/>
         </div>
-        <div className="w-full lg:w-3/6 px-5 py-5 lg:px-10 lg:py-10">
+        <div className="w-full lg:w-3/6 p-2 lg:px-5 lg:py-5 lg:px-10 lg:py-10">
           <Paragraph>
             Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams. 
           </Paragraph>
@@ -111,7 +111,7 @@ function about() {
           <Heading1>OUR MISSION STATEMENT</Heading1>
         </section>
       <div className={styles.header}></div>
-      <div className="p-20 justify-center border-blue-800">
+      <div className="p-5 lg:p-20 justify-center border-blue-800">
         <Paragraph>
         Africa has brilliant minds that are full of ideas and energy but who lack access to the infrastructure and funds to realize their dreams.
         </Paragraph>
@@ -161,9 +161,9 @@ function about() {
 
 
 
-      <section className="text-center p-20">
+      <section className="text-center md:p-20">
           <Heading1 className="text-5xl">MEET OUR FOUNDERS</Heading1>
-          <div className="flex flex-row place-content-around">
+          <div className="flex flex-col md:flex-row place-content-around">
             <div>
               <Image src="/josh2.jpg" width={290} height={260} className="rounded-full"/> 
               <Heading2>JOSHUA AKPAN</Heading2>
@@ -177,8 +177,9 @@ function about() {
           </div>
         </section>
       
-
-        <section className="text-center p-20">
+        <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
+        
+        <section className="text-center p-2 md:p-20">
               <Heading1>ABCD COHORT 1</Heading1>
               <Heading2>Creating female tech leads in Africa</Heading2>
         </section>

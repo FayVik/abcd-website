@@ -12,10 +12,10 @@ export function Heading2({ children }) {
 
 export function Heading3({ children }) {
   return (
-    <h3 className="text-2xl text-justify mb-3 text-blue-400">{children}</h3>
+    <h3 className="text-2xl mb-3 text-blue-400">{children}</h3>
   );
 }
 
 export function Paragraph({ children }) {
-  return <p className="text-lg text-justify">{children}</p>;
+  return <p className="mb-4 text-justify">{children}</p>;
 }

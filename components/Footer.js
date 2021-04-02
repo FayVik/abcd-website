@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row w-full lg:p-6 bg-gray-700 text-white lg:z-40">
+    <footer className="flex flex-col md:flex-row w-full p-2 lg:p-6 bg-gray-700 text-white lg:z-40">
       <div className="w-3/6">
         <h4 class="mb-4">Port Harcourt Office Address</h4>
         <p class="m-0 p-0">Woji Estate Road, YKC Junction, Port Harcourt</p>
