@@ -172,7 +172,7 @@ function about() {
         <Paragraph>
           By fulfilling this mission, ABCD will concretely contribute to:
         </Paragraph>
-        <ul className="text-2xl my-2">
+        <ul className="text-2xl my-3">
           <li>Local job creation</li>
           <li>Local business development</li>
           <li>On-boarding to the global Cardano ecosystem</li>

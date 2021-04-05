@@ -1,34 +1,35 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row w-full p-2 lg:p-6 bg-gray-700 text-white lg:z-40">
-      <div className="w-3/6 mb-10 md:text-center sm:text-center sm:w-full">
-        <h4 class="mb-4">Port Harcourt Office Address</h4>
-        <p class="m-0 p-0">Woji Estate Road, YKC Junction, Port Harcourt</p>
-        <p>Tel: +234 816 643 5419</p>
+      <div className="w-3/6 md:w-full mb-10 md:text-center sm:text-center sm:w-full">
+        <Paragraph>Port Harcourt Office Address</Paragraph>
+        <Paragraph>Woji Estate Road, YKC Junction, Port Harcourt</Paragraph>
+        <Paragraph>Tel: +234 816 643 5419</Paragraph>
       </div>
-      <div className="w-3/6 mb-10 md:text-center sm:text-center sm:w-full">
-        <p class="p-0 m-0">Email Us: hr@hxi.com.ng</p>
-        <p class="p-0 m-0">@Copyright 2020. All rights reserved by ABCD</p>
+      <div className="w-3/6 md:w-ful mb-10 md:text-center sm:text-center sm:w-full">
+        <Paragraph>Email Us: hr@hxi.com.ng</Paragraph>
+        <Paragraph>T@Copyright 2020. All rights reserved by ABCD</Paragraph>
       </div>
-      <div className="w-3/6 mb-10 md:text-center sm:text-center sm:w-full">
+      <div className="w-3/6 md:w-ful mb-10 md:text-center sm:text-center sm:w-full">
         <Link href="https://twitter.com/abcdeveloperz">
           <a className="lg:inline-flex mr-6 md:inline-flex sm:inline-flex xs:inline-flex">
-            <FontAwesomeIcon className="w-9" icon={["fab", "twitter"]} />
+            <FontAwesomeIcon className="text-4xl" icon={["fab", "twitter"]} />
           </a>
         </Link>
 
         <Link href="/">
           <a className="lg:inline-flex mr-6 md:inline-flex sm:inline-flex xs:inline-flex">
-            <FontAwesomeIcon className="w-9" icon={["fab", "instagram"]} />
+            <FontAwesomeIcon className="text-4xl" icon={["fab", "instagram"]} />
           </a>
         </Link>
 
         <Link href="https://medium.com/poapool">
           <a className="lg:inline-flex mr-6 md:inline-flex sm:inline-flex xs:inline-flex">
-            <FontAwesomeIcon className="w-9" icon={["fab", "medium-m"]} />
+            <FontAwesomeIcon className="text-4xl" icon={["fab", "medium-m"]} />
           </a>
         </Link>
       </div>

@@ -1,12 +1,12 @@
 export function Heading1({ children }) {
   return (
-    <h1 className="mb-3 text-2xl md:text-8xl font-abcdheading">{children}</h1>
+    <h1 className="mb-3 text-4xl md:text-6xl font-abcdheading">{children}</h1>
   );
 }
 
 export function Heading2({ children }) {
   return (
-    <h2 className="mb-3 text-xl md:text-6xl font-abcdheading">{children}</h2>
+    <h2 className="mb-3 text-4xl md:text-6xl font-abcdheading">{children}</h2>
   );
 }
 

@@ -69,12 +69,12 @@ export default function Home() {
             </InfoCard>
           </div>
 
-          <div className="mx-5 md:mx-10 my-20">
+          <div className="mx-5 md:mx-10 my-20 ">
             <Heading2>Events</Heading2>
-            <section>
+            <section className="mt-6 w-full flex justify-center">
               <iframe
-                width="560"
-                height="315"
+                width="660"
+                height="415"
                 src="https://www.youtube.com/embed/6-MvvZrhg40"
                 title="YouTube video player"
                 frameborder="0"

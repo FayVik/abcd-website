@@ -25,7 +25,7 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
-      <div className="min-h-96">
+      <div className="min-h-96 text-center pt-10">
         <Heading2>STORIES Of OUR WOMEN IN CARDANO</Heading2>
         <div className="flex flex-col md:flex-wrap lg:flex-row items-center w-full min-h-96 py-20 px-4">
           <BlogCard>
