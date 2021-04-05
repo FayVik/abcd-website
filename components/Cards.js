@@ -3,7 +3,7 @@
 
 export function BlogCard({ children }) {
   return (
-    <div className="flex-1 md:w-4/5 lg:w-4/5 sm:w-full text-justify px-8 py-4 mx-4 mb-10 border shadow-lg w-full rounded-lg bg-gray-100">
+    <div className="flex-1 md:w-3/6 lg:w-3/6 sm:w-full text-left px-8 py-4 mx-4 mb-10 border w-full rounded-lg">
       {children}
     </div>
   );
@@ -42,11 +42,10 @@ export function InfoCard({ children }) {
   );
 }
 
-
 export function AboutCard({ children }) {
   return (
     <div class="max-w-md mx-auto xl:mx-5 my-10 xl:my-0 bg-white rounded-xl shadow-md overflow-hidden">
       {children}
     </div>
-  )
+  );
 }

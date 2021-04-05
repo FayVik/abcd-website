@@ -5,16 +5,16 @@ import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
 export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row w-full p-2 lg:p-6 bg-gray-700 text-white lg:z-40">
-      <div className="w-3/6 md:w-full mb-10 md:text-center sm:text-center sm:w-full">
-        <Paragraph>Port Harcourt Office Address</Paragraph>
-        <Paragraph>Woji Estate Road, YKC Junction, Port Harcourt</Paragraph>
-        <Paragraph>Tel: +234 816 643 5419</Paragraph>
+      <div className="lg:w-3/6 md:w-full mb-10 sm:text-center sm:w-full px-4 text-1xl">
+        <span>Port Harcourt Office Address</span> <br />
+        <span>Woji Estate Road, YKC Junction, Port Harcourt</span> <br />
+        <span>Tel: +234 816 643 5419</span>
       </div>
-      <div className="w-3/6 md:w-ful mb-10 md:text-center sm:text-center sm:w-full">
-        <Paragraph>Email Us: hr@hxi.com.ng</Paragraph>
-        <Paragraph>T@Copyright 2020. All rights reserved by ABCD</Paragraph>
+      <div className="lg:w-3/6 md:w-full mb-10 sm:text-center sm:w-full px-4 text-1xl">
+        <span>Email Us: hr@hxi.com.ng</span>
+        <span>T@Copyright 2020. All rights reserved by ABCD</span>
       </div>
-      <div className="w-3/6 md:w-ful mb-10 md:text-center sm:text-center sm:w-full">
+      <div className="lg:w-3/6 md:w-full mb-10 md:text-center sm:text-center xs:text-center sm:w-full px-4">
         <Link href="https://twitter.com/abcdeveloperz">
           <a className="lg:inline-flex mr-6 md:inline-flex sm:inline-flex xs:inline-flex">
             <FontAwesomeIcon className="text-4xl" icon={["fab", "twitter"]} />

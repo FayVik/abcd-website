@@ -38,9 +38,10 @@ export default function Home() {
 
             <ImageCard>
               <Image
-                src="/rhero.jpg"
+                src="/abcd.jpg"
                 width="500"
                 height="400"
+                objectFit="fill"
                 className="m-0 p-0 rounded-lg shadow-lg text-center"
               />
             </ImageCard>
