@@ -21,7 +21,7 @@ export default function Home() {
             <p>( ABCD )</p>
           </div>
         </div>
-        <div className="w-full min-h-screen">
+        <div className="w-full min-h-screen text-center mt-10">
           <Heading2>More About ABCD</Heading2>
           <div className="flex flex-col md:flex-wrap lg:flex-row items-center w-full min-h-80">
             <InfoCard>
@@ -67,6 +67,21 @@ export default function Home() {
                 </Paragraph>
               </div>
             </InfoCard>
+          </div>
+
+          <div className="mx-5 md:mx-10 my-20">
+            <Heading2>Events</Heading2>
+            <section>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/6-MvvZrhg40"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </section>
           </div>
         </div>
       </body>
