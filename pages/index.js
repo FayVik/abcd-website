@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Site Template</title>
+        <title>ABCDevs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
@@ -16,7 +16,7 @@ export default function Home() {
           <div
             className={`flex-1 w-full sm:w-full xs:w-full lg:w-full px-6 pt-64 text-center text-2xl ${style.movement}`}
           >
-            <p>Welcome</p>
+            <p>Welcome to ABCD</p>
             <Heading1>AFRICA'S BLOCKCHAIN CENTER FOR DEVELOPERS</Heading1>
             <p>( ABCD )</p>
           </div>
