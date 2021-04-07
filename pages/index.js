@@ -18,7 +18,6 @@ export default function Home() {
           >
             <p>Welcome to ABCD</p>
             <Heading1>AFRICA'S BLOCKCHAIN CENTER FOR DEVELOPERS</Heading1>
-            <p>( ABCD )</p>
           </div>
         </div>
         <div className="w-full min-h-screen text-center mt-10">
