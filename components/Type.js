@@ -16,12 +16,16 @@ export function Heading2({ children }) {
 
 export function Heading3({ children }) {
   return (
-    <h3 className="text-4xl mb-3 font-abcdheading">
+    <h3 className="text-2xl mb-3 font-abcdheading">
       <strong>{children}</strong>
     </h3>
   );
 }
 
 export function Paragraph({ children }) {
-  return <p className="mb-4 text-justify text-2xl">{children}</p>;
+  return <p className="mb-4 text-justify text-lg">{children}</p>;
+}
+
+export function Mission({ children }) {
+  return <p class="text-blue-700 text-3xl py-10">{children}</p>
 }

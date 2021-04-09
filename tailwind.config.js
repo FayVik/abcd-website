@@ -16,7 +16,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         "about-smile": "url('/smile.jpg')",
         "strand": "url('/strand.jpg')",
-        "woman": "url('/abcd1.jpg')",
+        "abcdteam": "url('/abcd1.jpg')",
       }),
     },
   },

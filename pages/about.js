@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/about.module.css";
 import { AboutCard } from "../components/Cards";
-import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
+import { Heading1, Heading2, Heading3, Paragraph, Mission } from "../components/Type";
 
 // Friday - let's get background images working. Buky will try this before Friday
 // https://tailwindcss.com/docs/background-image#customizing
@@ -12,17 +12,19 @@ import { Heading1, Heading2, Heading3, Paragraph } from "../components/Type";
 function about() {
   return (
     <div>
-      <div className="bg-about-smile bg-cover min-h-screen pt-2 px-2 md:px-20">
-        <div className="w-full lg:w-1/2 rounded-lg md:rounded-3xl lg:rounded-full p-2 md:p-20 mt-20 bg-blue-500 bg-opacity-80 hover:bg-blue-500">
-          <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
-          <section className="my-2 md:m-5 md:py-9">
-            <Heading2>Africa's Blockchain Center for Developers</Heading2>
-            <Paragraph>
-              empowering the African woman for greater exploits...
-            </Paragraph>
-          </section>
-          <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
-          <section className="my-2 md:mx-5 md:my-5">
+      <div className="bg-about-smile bg-cover bg-top w-full min-h-screen pt-2 px-2 md:px-20">
+        <div className="w-full lg:w-1/2 rounded-lg lg:rounded-xl 2xl:rounded-full p-2 md:p-20 mt-20 bg-blue-700 bg-opacity-80 hover:bg-blue-500">
+
+          <div className="border-t-8 border-b-8 border-blue-300 w-full">
+            <section className="my-2 md:m-5 md:py-9 text-white">
+              <Heading2>Africa's Blockchain Center for Developers</Heading2>
+              <Paragraph>
+                empowering the African woman for greater exploits...
+              </Paragraph>
+            </section>
+          </div>
+
+          <section className="my-2 md:mx-5 md:my-5 text-white">
             <Link href="/">
               <Paragraph>
                 <a className="">Learn more</a>
@@ -138,11 +140,11 @@ function about() {
         <Heading1>OUR MISSION STATEMENT</Heading1>
       </section>
       <div className={styles.header}></div>
-      <div className="p-5 lg:p-20 justify-center border-blue-800">
-        <Paragraph>
+      <div className="p-5 lg:p-20 w-full md:w-5/6 lg:w-3/4 xl:w-1/2 mx-auto justify-center border-blue-800">
+        <Heading3>
           Africa has brilliant minds that are full of ideas and energy but who
           lack access to the infrastructure and funds to realize their dreams.
-        </Paragraph>
+        </Heading3>
         <Paragraph>
           ABCD will create opportunities for Africans providing blockchain
           solutions to the world utilizing the pool of talent working from
@@ -163,15 +165,15 @@ function about() {
           You will find below, a short description of the project. More detailed
           information is available in the attached documents.
         </Paragraph>
-        <Paragraph>
+        <Mission>
           The mission of the African Blockchain Center for Developers is to
           stimulate, thanks to Cardano adoption, the establishment and growth of
           technology-based start-up companies and other blockchain-enabled
           businesses.
-        </Paragraph>
-        <Paragraph>
+        </Mission>
+        <Heading3>
           By fulfilling this mission, ABCD will concretely contribute to:
-        </Paragraph>
+        </Heading3>
         <ul className="text-2xl my-3">
           <li>Local job creation</li>
           <li>Local business development</li>
@@ -220,6 +222,8 @@ function about() {
           through multiplier effects that ultimately benefits the overall
           community beyond the individuals.
         </Paragraph>
+        </div>
+
 
         <div className={styles.header}></div>
 
@@ -250,13 +254,12 @@ function about() {
         </section>
 
         <div className="p-1 bg-blue-300 w-full bg-opacity-80 top-0 hover:bg-blue-100"></div>
-
-        <section className="text-center p-2 md:p-20">
-          <Heading1>ABCD COHORT 1</Heading1>
-          <Heading2>Creating female tech leads in Africa</Heading2>
-        </section>
-      </div>
-    </div>
+          <section className="text-center p-2 md:p-20">
+            <Heading1>ABCD COHORT 1</Heading1>
+            <Heading2>Creating female tech leads in Africa</Heading2>
+          </section>
+        </div>
+   
   );
 }
 

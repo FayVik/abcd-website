@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <div className="bg-woman min-h-screen w-full flex flex-col object-fill justify-start bg-cover">
+        <div className="bg-abcdteam bg-cover bg-top min-h-screen w-full flex flex-col object-fill justify-start">
           <div
             className={`flex-1 w-full sm:w-full xs:w-full lg:w-full px-6 pt-64 text-center text-2xl ${style.movement}`}
           >
