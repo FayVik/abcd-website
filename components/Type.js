@@ -26,6 +26,10 @@ export function Paragraph({ children }) {
   return <p className="mb-4 text-justify text-lg">{children}</p>;
 }
 
+export function ParagraphWhite({ children }) {
+  return <p className="mb-4 text-justify text-lg text-white">{children}</p>;
+}
+
 export function Mission({ children }) {
   return <p class="text-blue-700 text-3xl py-10">{children}</p>
 }

@@ -1,12 +1,18 @@
-import { Heading1 } from '../components/Type'
+import { Heading1, Heading2, Paragraph } from '../components/Type'
 
 export default function contact() {
     return (
-        <div className="mx-5 md:mx-10 my-20">
+        <div className="w-full md:w-3/4 lg:w-2/3 mx-auto my-20">
             <Heading1>Contact Us</Heading1>
-            <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6-MvvZrhg40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section className="border-4 w-full h-48 my-10 p-10">
+                <Heading2>
+                    Contact info goes here
+                </Heading2>
+                <Paragraph>
+                    Add MailChimp links, or embed here
+                </Paragraph>
             </section>
+            
         </div>
     )
 }

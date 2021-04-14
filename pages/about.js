@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/about.module.css";
 import { AboutCard } from "../components/Cards";
-import { Heading1, Heading2, Heading3, Paragraph, Mission } from "../components/Type";
+import { Heading1, Heading2, Heading3, Paragraph, ParagraphWhite, Mission } from "../components/Type";
 
 // Friday - let's get background images working. Buky will try this before Friday
 // https://tailwindcss.com/docs/background-image#customizing
@@ -109,30 +109,28 @@ function about() {
         <Heading1>OUR VISION</Heading1>
       </section>
 
-      <section className="flex flex-col lg:flex-row w-5/6 mx-auto bg-gradient-to-r from-blue-800 via-white to-blue-800 rounded-3xl">
-        <div className="w-full lg:w-3/6 px-5 pt-5 lg:pl-10 lg:py-10">
-          <Image
-            src="/robot.jpg"
-            width={1224}
-            height={816}
-            alt="white background"
-          />
+      <section className="flex flex-col lg:flex-row w-5/6 mx-auto bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 rounded-3xl">
+        <div className="w-full lg:w-3/6 px-5 pt-5 lg:pl-10 lg:py-10 hidden md:contents">
+          <iframe className="mx-auto my-5 " width="560" height="315" src="https://www.youtube.com/embed/6-MvvZrhg40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
         </div>
         <div className="w-full lg:w-3/6 p-2 lg:px-5 lg:py-5 lg:px-10 lg:py-10">
-          <Paragraph>
+          <ParagraphWhite>
             Africa has brilliant minds that are full of ideas and energy but who
             lack access to the infrastructure and funds to realize their dreams.
-          </Paragraph>
-          <Paragraph>
+          </ParagraphWhite>
+          <ParagraphWhite>
             ABCD will create opportunities for Africans providing blockchain
             solutions to the world utilizing the pool of talent working from
             Africa.
-          </Paragraph>
-          <Paragraph>
+          </ParagraphWhite>
+          <ParagraphWhite>
             ABCD founders have been long involved in the development of
             initiatives related to the tech industry and blockchain in Nigeria
             and Africa.
-          </Paragraph>
+          </ParagraphWhite>
+        </div>
+        <div className="w-5/6 mx-5 py-10 md:hidden">
+          <a href="https://youtu.be/6-MvvZrhg40" className="text-white text-2xl">Click here to see ABCD's interview with Kaizen Crypto.</a>
         </div>
       </section>
 
