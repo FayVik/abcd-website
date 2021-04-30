@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../styles/about.module.css";
 import { AboutCard } from "../components/Cards";
 import { Heading1, Heading2, Heading3, Paragraph, ParagraphWhite, Mission } from "../components/Type";
+import AboutABCD from "../components/Metadata/AboutABCD";
 
 // Friday - let's get background images working. Buky will try this before Friday
 // https://tailwindcss.com/docs/background-image#customizing
@@ -256,6 +257,7 @@ function about() {
             <Heading1>ABCD COHORT 1</Heading1>
             <Heading2>Creating female tech leads in Africa</Heading2>
           </section>
+          <AboutABCD />
         </div>
    
   );
